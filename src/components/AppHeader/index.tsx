@@ -42,15 +42,16 @@ const AppHeader = React.forwardRef(
         <Toolbar sx={{ background: "#08140C 0% 0% no-repeat padding-box" }}>
           <Box
             sx={{
-              ...typoStyle,
+                ...typoStyle,
               width: "100%",
               flexDirection: "row",
+                alignItems: "center",
             }}
           >
             <Countdown />
             <Box
               sx={{
-                ...typoStyle,
+                  ...typoStyle,
                 flexGrow: 1,
                 flexDirection: "column",
               }}
@@ -78,8 +79,8 @@ const AppHeader = React.forwardRef(
             <LanguageWidget />
             <Box
               sx={{
-                ...typoStyle,
-                justifyContent: "flex-end",
+                  ...typoStyle,
+                  justifyContent: "flex-end",
               }}
             >
               {user && user.eMail && (

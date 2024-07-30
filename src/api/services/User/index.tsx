@@ -5,10 +5,13 @@ import Store from "./store";
 /* 
 CONTEXT / PROVIDER INIT
 */
+interface StoreProviderProps {
+    children: React.ReactNode;
+}
 
 const UserStoreContext = createContext<Store | null>(null);
 
-export const StoreProvider: React.FC = (props) => {
+export const StoreProvider: React.FC<StoreProviderProps> = (props) => {
   const { children } = props;
 
   return (

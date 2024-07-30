@@ -1,4 +1,5 @@
-import User from "./User";
+import { StoreProvider as User } from "./User";
+import React from "react";
 
 const requireAllServices = (ctx: any): React.FC<any>[] => {
   const keys = ctx.keys();
